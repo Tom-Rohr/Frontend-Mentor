@@ -1,94 +1,264 @@
-# Frontend Mentor - Interactive rating component
+# Frontend Mentor - Interactive rating component solution
 
-![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshots
 
-## Where to find everything
+![Screenshot of solution by Tom-Rohr](./images/solution_InteractiveRatingComponent.png)
+![Screenshot of solution by Tom-Rohr](./images/solution_InteractiveRatingComponent2.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [GitHub repo](https://github.com/Tom-Rohr/Frontend-Mentor/tree/main/Newbie_interactive-rating-component)
+- Live Site URL: [Netlify](https://fem-interactive-rating-comp.netlify.app/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built with
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- Blood
+- Sweat
+- Tears
+- YouTube
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## What I learned
 
-## Building your project
+### HTML
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- List groups(ul) and list items (li).
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### CSS
 
-## Deploying your project
+- Style multiple containers in one block.
+- Explicitly declare a property to inherit from the parent element.
+- The specificity hierarchy relationship between \*, root:, html, and containers.
+- Reset position elements to clear default stylings
+- Remove default style (bulletdddd points) from list (ul/ol)
+- Use flex, align-items, justify-content to center.
+- Set min-height:100vh to center on y-axis.
+- Create buttons that change colors when hovered over or clicked.
+- Hiding items using 'display: none'
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### Javascript
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- Declaring variables with document.querySelector(), document.querySelectorAll() and document.getElementById() to assign logic to html and css elements.
+- Using EventListeners to execute logic and set values based on user interaction. Specifically button clicks.
+- Set an EventListener to multiple buttons
+- Toggling show/hide of html/css elements by adding or removing a class on an element or changing the value of a class. (display: none / display: block)
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### HTML
 
-## Create a custom `README.md`
+```html
+<ul>
+  <li><button class="btn">1</button></li>
+  <li><button class="btn">2</button></li>
+  <li><button class="btn">3</button></li>
+  <li><button class="btn">4</button></li>
+  <li><button class="btn">5</button></li>
+</ul>
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### CSS
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+Style 2 different containers in one body.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```css
+.main-container,
+.thank-you {
+  background-color: var(--medium-grey);
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+}
+```
 
-## Submitting your solution
+Inherit from parent container
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+```css
+button {
+  font-family: inherit;
+}
+```
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+Specificity hierarchy
 
-## Sharing your solution
+```css
+* {
+  background: green;
+}
+:root {
+  background: yellow;
+}
+html {
+  background: black;
+}
+h1 {
+  background: blue;
+}
+```
 
-There are multiple places you can share your solution:
+Reset positioning elements
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+Remove default bullets from list
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+```css
+ul {
+  list-style-type: none;
+}
+```
 
-## Got feedback for us?
+Use flex, align-items, justify-content to center. min-height:100vh to center on y-axis.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+```css
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: var(--very-dark-blue);
+  margin: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+```
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+Buttons that change different colors when focused(last clicked in container) and hovered over.
 
-**Have fun building!** 🚀
+```css
+.main-container ul li button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: hsl(214, 20%, 23%);
+  color: white;
+  padding-top: 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-container ul li button:hover {
+  background-color: var(--orange);
+}
+.main-container ul li button:focus {
+  background-color: var(--light-grey);
+}
+
+.btn-submit {
+  background-color: var(--orange);
+  color: white;
+  width: 100%;
+  padding: 0.8rem 0 0.6rem;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  background-color: white;
+  color: var(--orange);
+}
+```
+
+Syntax is margin: top left/right bottom. Here 'auto' is centering the image on the x axis in its container.
+
+```css
+.thank-you img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+```
+
+Class to toggle when switching between the rating and thank-you 'pages'
+
+```css
+.hidden {
+  display: none;
+}
+```
+
+### Javascript
+
+Declaring variables representing the rating and thank-you 'pages'.
+Note the '.' before the class names; this is the syntax for querySelector().
+
+```js
+const mainContainer = document.querySelector(".main-container");
+const thanksContainer = document.querySelector(".thank-you");
+```
+
+Declaring variables representing the different buttons. Parameters and the Id property set in the html.
+
+```js
+const submitButton = document.getElementById("submit");
+const rateAgain = document.getElementById("rate-again");
+const rating = document.getElementById("rating");
+```
+
+Declare a local variable representing all buttons of the .btn class (1-5 buttons)
+
+```js
+const rates = document.querySelectorAll(".btn");
+```
+
+Defining event listener (click) event for 'submit' button and 'rate again' button. Toggles style.display between 'none' and 'block' to show/hide the rating 'page' and adds/removes the "hidden class" from the thank you 'page' to show/hide.
+
+```js
+submitButton.addEventListener("click", () => {
+  thanksContainer.classList.remove("hidden");
+  mainContainer.style.display = "none";
+});
+
+rateAgain.addEventListener("click", () => {
+  thanksContainer.classList.add("hidden");
+  mainContainer.style.display = "block";
+});
+```
+
+Sets the local const in the JS file to the value of the most recently clicked rating button (1-5). Test event listener with console.log to ensure respective button values are captured.
+
+```js
+rates.forEach((rate) => {
+  rate.addEventListener("click", () => {
+    rating.innerHTML = rate.innerHTML;
+  });
+});
+```
+
+- Website - [Tom Rohr](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
