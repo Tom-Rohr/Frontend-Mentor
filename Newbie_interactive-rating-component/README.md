@@ -259,6 +259,4 @@ rates.forEach((rate) => {
 });
 ```
 
-- Website - [Tom Rohr](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github repo - [Tom-Rohr](https://github.com/Tom-Rohr)
