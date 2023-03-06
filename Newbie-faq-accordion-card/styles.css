@@ -57,7 +57,7 @@ body {
     gap: .5rem;
     width: 90%;
     max-width: 45rem;
-    max-height: 90rem;
+    max-height: 80rem;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   }
   
@@ -66,7 +66,7 @@ body {
       background: white;
       grid: 1fr / 38.8rem 1fr;
       max-width: 110rem;
-      min-height: 65rem;
+      max-height: 65rem;
     }
   }
   
