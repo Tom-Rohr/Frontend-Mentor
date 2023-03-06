@@ -9,9 +9,9 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <link href="/styles.css" rel="stylesheet" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
-    <link href="/styles/reset.css" rel="stylesheet" />
-    <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- FAQ's could be a section in a website. Let's use <section> for it in that
@@ -95,7 +95,7 @@
             </section>
           </li>
 
-          <li class="faq__faq-item">
+          <li class="faq__faq-item active">
             <section class="faq-item__summary">
               <p class="faq-item__description">How do I reset my password?</p>
               <div class="faq-item__arrow-container">
@@ -106,7 +106,7 @@
                 />
               </div>
             </section>
-            <section class="faq-item__detail">
+            <section class="faq-item__detail" style="max-height: max-content">
               Click “Forgot password” from the login page or “Change password”
               from your profile page. A reset link will be emailed to you.
             </section>
@@ -146,6 +146,12 @@
             </section>
           </li>
         </ul>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/Tom-Rohr">Tom-Rohr</a>.
+        </div>
       </section>
     </section>
   </body>
