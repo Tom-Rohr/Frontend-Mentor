@@ -17,15 +17,3 @@ items.forEach((item) => {
         }
     })
 })
-
-//3.handleItemClick function -->
-
-//3.1 Grab the clicked item
-
-//3.2 Grab the itemDetail as we need to add maxHeight
-
-//3.3 Check if item has .active class
-
-//3.4 If it does, remove the maxHeight and remove the .active class
-
-//3.5 If it does, add the maxHeight and add the .active class
