@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
-    font-size: 12px;
+    font-size: 14px;
     /* PRIMARY TEXT */
     --very-dark-des-blue: hsl(238, 29%, 16%);
     --soft-red: hsl(14, 88%, 65%);   
@@ -57,7 +57,7 @@ body {
     gap: .5rem;
     width: 90%;
     max-width: 45rem;
-    max-height: 90rem;
+    max-height: 80rem;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   }
   
@@ -66,7 +66,7 @@ body {
       background: white;
       grid: 1fr / 38.8rem 1fr;
       max-width: 110rem;
-      min-height: 65rem;
+      max-height: 65rem;
     }
   }
   
@@ -147,7 +147,8 @@ body {
   @media screen and (min-width: 1110px) {
     img.faq__box-illustration {
       display: block;
-      transform: translate(-19rem, 4rem);
+      width: 17.5rem;
+      transform: translate(-19.1rem, 3.9rem);
     }
   }
 
@@ -179,13 +180,13 @@ section.faq__text-container {
  @media screen and (min-width: 1110px) {
     .faq__heading{
         position: relative;
-        transform: translate(3rem, 2rem);
+        transform: translate(0.7rem, 2rem);
     }
-    
  }
 
  ul.faq__faqs-list {
-    width: 75%;
+    width: 80%;
+    padding-inline-start: 10px;
     list-style: none;
     display: flex;
     flex-flow:column nowrap;
@@ -222,11 +223,12 @@ section.faq__text-container {
  }
 
  img.faq-item__arrow-icon {
+    rotate: 90deg;
     transition: 250ms;
  }
 
  .faq__faq-item:is(.active) img.faq-item__arrow-icon {
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
  }
 
  .faq-item__detail {
@@ -238,12 +240,13 @@ section.faq__text-container {
     color: var(--dark-grayish-blue);
  }
 
- .faq__faq-items:is(.active) > .faq-item__detail {
-    margin-top: 1.1rem;
+ .faq__faq-item:is(.active) > .faq-item__detail {
+    margin-top: .2rem;
+    max-height: 3.5rem;
  }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 14px; 
     text-align: center; 
     margin-top: 4.5rem;
     margin-bottom: 5px;
