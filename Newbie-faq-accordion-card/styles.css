@@ -179,13 +179,14 @@ section.faq__text-container {
  @media screen and (min-width: 1110px) {
     .faq__heading{
         position: relative;
-        transform: translate(3rem, 2rem);
+        transform: translate(0.7rem, 2rem);
     }
     
  }
 
  ul.faq__faqs-list {
-    width: 75%;
+    width: 80%;
+    padding-inline-start: 10px;
     list-style: none;
     display: flex;
     flex-flow:column nowrap;
