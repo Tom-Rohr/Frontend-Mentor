@@ -18,15 +18,15 @@
   </head>
   <body>
     <section class="main-container">
-      <p1 class="adviceNumber">ADVICE #<!-- Advice ID goes here --></p1>
-      <p class="advice">"<!-- Advice text goes here -->"</p>
+      <p1 class="adviceNumber">ADVICE #<span id="advice-id"></span></p1>
+      <p class="advice">"<span id="advice"></span>"</p>
       <section class="images-container">
         <picture class="divider">
           <source
-            media="(min-width: 449px)"
+            media="(min-width: 560px)"
             srcset="/images/pattern-divider-desktop.svg"
           />
-          <source media="(min-width: 450px)" />
+          <source media="(min-width: 560px)" />
           <img
             src="/images/pattern-divider-mobile.svg"
             alt="pattern divider mobile"
@@ -34,7 +34,7 @@
         </picture>
       </section>
       <section class="btn-container">
-        <button class="btn">
+        <button class="btn glow-on-hover" id="getAdviceButton">
           <img src="./images/icon-dice.svg" alt="button" />
         </button>
       </section>
@@ -47,4 +47,5 @@
       <a href="https://github.com/Tom-Rohr" target="_blank">Tom-Rohr</a>.
     </div>
   </body>
+  <script src="/index.js"></script>
 </html>

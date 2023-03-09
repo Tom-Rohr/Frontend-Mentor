@@ -41,7 +41,7 @@ section.main-container {
     
     box-shadow: 0px 50px 50px -20px rgba(19, 18, 20, 0.497);
 }
-@media screen and (min-width:450px) {
+@media screen and (min-width:560px) {
     section.main-container {
         margin-top: 20vh;
         width: 55vh;
@@ -58,31 +58,27 @@ p1.adviceNumber {
 }
 
 p.advice {
-    font-size: 28px;
+    font-size: 24px;
+    margin: 0 2rem;
+    text-align: center;
     color: var(--light-cyan);
+}
+@media screen and (min-width:560px) {
+    p.advice {
+        font-size: 28px;
+    }
 }
 /* IMAGES */
 
-/*For desktop divider*/
-picture.divider img {
-    width: 20.rem;
-    height:.8rem;
+section.images-container {
+    transform: translate(0rem, 16.3rem);
+    position: fixed;
+    margin: 0;
 }
 
-section.images-container {
-    transform: translate(0rem, 4.3rem);
-    margin:0;
-}
-@media screen and (min-width:450px) {
-    section.images-container {
-        transform: translate(0rem, 3.5rem);
-    }
-}
 section.btn-container {
     display: grid;
-
-    transform: translate(0rem, 1.5rem);
-
+    transform: translate(.1rem, 1.5rem);
 }
 .btn {
     background: var(--neon-green);
@@ -92,7 +88,13 @@ section.btn-container {
     border-radius: 50%;
     padding: 14px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
+.glow-on-hover:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
 .attribution { 
     font-size: 11px;
     text-align: center; 
