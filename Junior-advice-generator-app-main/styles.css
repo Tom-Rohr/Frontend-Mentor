@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    font-size: 12pt;
+    font-family: "Manrope", sans-serif;
+    
+    /* Primary */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    /* Neutral */
+    --greyish-blue: hsl(217, 19%, 38%);
+    --dark-greyish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--dark-blue);
+}
+
+section.main-container {
+    background: var(--dark-greyish-blue);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 8vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 35vh;
+    height: 33vh;
+    
+    box-shadow: 0px 50px 50px -20px rgba(19, 18, 20, 0.497);
+}
+@media screen and (min-width:450px) {
+    section.main-container {
+        margin-top: 20vh;
+        width: 55vh;
+        height: 33vh;
+    }
+}
+
+p1.adviceNumber {
+    color: var(--neon-green);
+    font-size: .55rem;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    margin-top: 2.2rem;
+}
+
+p.advice {
+    font-size: 28px;
+    color: var(--light-cyan);
+}
+/* IMAGES */
+
+/*For desktop divider*/
+picture.divider img {
+    width: 20.rem;
+    height:.8rem;
+}
+
+section.images-container {
+    transform: translate(0rem, 4.3rem);
+    margin:0;
+}
+@media screen and (min-width:450px) {
+    section.images-container {
+        transform: translate(0rem, 3.5rem);
+    }
+}
+section.btn-container {
+    display: grid;
+
+    transform: translate(0rem, 1.5rem);
+
+}
+.btn {
+    background: var(--neon-green);
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    padding: 14px;
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    align-self: flex-end; 
+    margin-bottom: .2rem;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
