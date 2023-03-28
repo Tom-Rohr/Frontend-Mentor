@@ -1,6 +1,6 @@
 # Frontend-Mentor
 
-### This repository is dedicated to storing challenges from FrontendMentor.com
+### This repository contains my solutions to challenges from FrontendMentor.com
 
 ### Netlify links:
 
